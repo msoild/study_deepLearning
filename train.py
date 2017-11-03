@@ -16,7 +16,7 @@ def main():
     accuracy = Accuracy()
     rate=1000.0
     net = FcNetwork([289, 26], losslayer)
-    epochs = 100
+    epochs = 1000
 
     # train(self, train_datalayer, test_datalayer, accuracy,rate, epochs)
     net.train(train_datalayer, test_datalayer, accuracy, rate, epochs)
